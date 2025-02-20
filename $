@@ -1,0 +1,6 @@
+      PID    PPID    PGID     WINPID   TTY         UID    STIME COMMAND
+     3313       1    3313      20504  cons2     197609 09:37:05 /usr/bin/bash
+     1996       1    1996      20288  ?         197609 07:55:44 /mingw64/libexec/git-core/git
+     1821       1    1821      15028  cons0     197609 07:47:05 /usr/bin/bash
+     3790    1821    3790      12064  cons0     197609 09:45:36 /usr/bin/PS
+     2984       1    2984      17292  cons1     197609 09:17:22 /usr/bin/bash
