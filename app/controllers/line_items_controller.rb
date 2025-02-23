@@ -23,11 +23,11 @@ class LineItemsController < ApplicationController
 
   # POST /line_items or /line_items.json
   def create
-     product = Product.find(params[:product_id])
-     @line_item = @cart.line_items.build(product: product)
+    product = Product.find(params[:product_id])
+     @line_item = @cart.add_product(product)
     respond_to do |format|
     if @line_item.save
-     format.html { redirect_to cart_url(@line_item.cart),
+    format.html { redirect_to cart_url(@line_item.cart),
     notice: "Line item was successfully created." }
     format.json { render :show,
     status: :created, location: @line_item }
@@ -38,7 +38,7 @@ class LineItemsController < ApplicationController
     status: :unprocessable_entity }
     end
     end
-    end
+  end
 
   # PATCH/PUT /line_items/1 or /line_items/1.json
   def update
