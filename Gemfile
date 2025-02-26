@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 ruby "3.3.7"
-
+gem 'active_model_serializers'
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.1.5", ">= 7.1.5.1"
 
